@@ -7,10 +7,11 @@ package restaurant;
 
 /**
  *
- * @author 1styrGroupB
+ * @author RicaChristineDebuayan
  */
 import java.util.Scanner;
 
+//Inheritance
 public class Order extends Menu {
 
     public double subTotal;
