@@ -10,7 +10,7 @@ import static restaurant.Order.input;
 
 /**
  *
- * @author 1styrGroupB
+ * @author RicaChristineDebuayan
  */
 public class Main {
 
