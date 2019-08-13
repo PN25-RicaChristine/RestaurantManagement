@@ -4,14 +4,16 @@ import java.util.Scanner;
 
 /**
  *
- * @author 1styrGroupB
+ * @author RicaChristineDebuayan
  */
 public class Menu {
 
+    //declaring final set of menu for food and drinks as well as their prices
     final String[] foodItems = new String[]{"1. Lechon", "2. Ground Pork", "3. Corned Beef", "4. Pork Siningag", "5. Brown Rice", "6. Plain Rice"};
     final double[] foodItemPrice = new double[]{200, 50, 30, 40, 20, 10};
     final String[] drinkItems = new String[]{"7.  Orange Juice", "8.  Milk Tea", "9.  Water", "10. Pineapple Juice", "11. Gulaman", "12. Coke"};
     final double[] drinkItemPrice = new double[]{15, 50, 10, 15, 20, 20};
+    //composition
     private Customer customer;
     
     public Customer getCustomer() {
@@ -26,6 +28,7 @@ public class Menu {
         this.customer = new Customer();
     }
 
+    //displays all the foods and drinks together with its respective prices by using for loop
     public void displayMenu() {
         int count = 0;
         System.out.printf("%-32s%-20s|\t%-20s%-20s\n", "FOODS", "PRICE", "DRINKS", "PRICE");
@@ -34,6 +37,7 @@ public class Menu {
         }
     }
 
+    //getting information of customer
     public void infoCust() {
         Scanner input= new Scanner(System.in);
         System.out.println(" WELCOME TO RADM - JAVA RESTAURANT!\n");
